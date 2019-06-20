@@ -32,8 +32,7 @@ function printQuestionMarks(num) {
 
 
   // ORM
-  // takes the helper functions (input & conditions) and tunrs into SQL commands
-  
+  // takes the helper functions (input & conditions) and tunrs into SQL commands 
   var orm = {
     // queries all burgers from the table
     selectAll: function (tableInput, cb) {
