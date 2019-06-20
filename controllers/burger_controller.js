@@ -33,11 +33,26 @@ router.post("/burgers/create", function(req,res) {
 });
 
 // put - updateOne
-router.put("/burgers/update", function(req,res) {
+router.put("/burgers/update/id", function(req,res) {
+    var condition = "id = " + req.params.id;
+    console.log("condition", condition);
     
+    burger.updateOne(
+        {devoured: req.body.devoured}, 
+        condition, function() {
+            res.redirect("/burgers");
+        });
 });
 
 //delete - deleteOne
+router.delete("/burgers/delete/id", function(req,res) {
+    var condition = "id = " + req.params.id;
+    console.log("condition", condition);
+    
+    burger.deleteOne(condition, function() {
+        res.redirect("/burgers");
+    });
+});
 
 
 // exports routes for server.js
