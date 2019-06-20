@@ -36,7 +36,7 @@ function printQuestionMarks(num) {
   
   var orm = {
     // queries all burgers from the table
-    all: function (tableInput, cb) {
+    selectAll: function (tableInput, cb) {
         var queryString = "SELECT * FROM " + tableInput + ";";
             connection.query(queryString, function(err,results) {
                 if (err) {
@@ -45,10 +45,11 @@ function printQuestionMarks(num) {
                 cb(results);
         });
     },
+    
     // creates a new burger to the table
     // vals -- an array of values that we want to save to cols
-	// cols -- the columns we want to insert the values into
-    create: function(table, cols, vals, cb) {
+ 	  // cols -- the columns we want to insert the values into
+    insertOne: function(table, cols, vals, cb) {
         var queryString = "INSERT INTO " + table;
     
         queryString += " (";
@@ -70,7 +71,7 @@ function printQuestionMarks(num) {
     
     // updates record in the table
     // objColVals -- the columns and values that you want to update
-    update: function(table, objColVals, condition, cb) {
+    updateOne: function(table, objColVals, condition, cb) {
         var queryString = "UPDATE " + table;
 
         queryString += " SET ";
@@ -86,8 +87,9 @@ function printQuestionMarks(num) {
         cb(result);
         });
     },
+
     // delete the burger from the table
-    delete: function(table, condition, cb) {
+    deleteOne: function(table, condition, cb) {
         var queryString = "DELETE FROM " + table;
         queryString += " WHERE ";
         queryString += condition;
