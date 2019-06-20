@@ -28,7 +28,7 @@ router.post("/burgers/create", function(req,res) {
         ["burger_name"], 
         [req.body.name],
         function() {
-            res.redirect("/burger");
+            res.redirect("/burgers");
         });
 });
 
