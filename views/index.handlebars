@@ -1,0 +1,51 @@
+{{!-- create the container --}}
+<div class="container text-center">
+
+    {{!-- BURGER IMAGE ROW--}}
+    <div class="row">
+        <div class="col-12 text-center">
+            <img src="../public/assets/img/mmmBurger.jpg" width="200" height"200">
+        </div>
+    </div>
+
+    {{!-- Eat-Da-Burger BANNER ROW --}}
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1> Eat-Da-Burger! </h1>
+        </div>
+    </div>
+
+    {{!-- BURGERS CONTROL ROW --}}
+    <div class="row">
+
+        {{!-- BURGERS for DEVOURING COLUMN --}}
+        <div class="col-6 text-center">
+            <h2> Tasty Burgers to Devour!</h2>
+        </div>
+
+
+        {{!-- DEVOURED BURGERS COLUMN --}}
+        <div class="col-6 text-center">
+            <h2> Devoured Burgers... YUM!!! </h2>
+        </div>
+
+    </div>
+    
+    {{!-- CREATE BURGERS ROW --}}
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2> Add a Burger to Devour </h2>
+
+            {{!-- CREATE BURGER FORM --}}
+            <form class="insertOne-form" action="/burgers/create" method="POST">
+                <div class="form-group">
+                    <label for="burger">Burger Name</label>
+                    {{!-- not 100 --}}
+                    <input type"text" name="burger_name">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Yummy Burger</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
