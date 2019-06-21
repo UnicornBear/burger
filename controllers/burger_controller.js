@@ -2,7 +2,6 @@
 var express = require("express");
 var router = express.Router();
 
-
 // import (require) burger.js
 var burger = require("../models/burger.js");
 
@@ -13,7 +12,7 @@ router.get("/", function(req,res) {
 
 // get selectAll
 router.get("/burgers", function(req,res) {
-    burgers.selectAll(function(data) {
+    burger.selectAll(function(data) {
         var hbsObject = {
             burgers: data
         };

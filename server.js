@@ -1,5 +1,6 @@
 // Set Express
 var express = require("express");
+var mysql = require("mysql");
 
 // define the port 
 var PORT = process.env.PORT || 8080;
@@ -19,7 +20,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-var routes = require("./controllers/catsController.js");
+var routes = require("./controllers/burger_controller.js");
 
 app.use(routes);
 
