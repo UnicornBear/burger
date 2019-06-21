@@ -14,11 +14,11 @@ router.get("/", function(req,res) {
 // get selectAll
 router.get("/burgers", function(req,res) {
     burgers.selectAll(function(data) {
-        var hbsobject = {
+        var allObjects = {
             burgers: data
         };
-        console.log(hbsObject);
-        res.render("index", hbsObject);
+        console.log(allObjects);
+        res.render("index", allObjects);
     });
 });
 
@@ -33,7 +33,7 @@ router.post("/burgers/create", function(req,res) {
 });
 
 // put - updateOne
-router.put("/burgers/update/id", function(req,res) {
+router.put("/burgers/update/:id", function(req,res) {
     var condition = "id = " + req.params.id;
     console.log("condition", condition);
     
@@ -45,7 +45,7 @@ router.put("/burgers/update/id", function(req,res) {
 });
 
 //delete - deleteOne
-router.delete("/burgers/delete/id", function(req,res) {
+router.delete("/burgers/delete/:id", function(req,res) {
     var condition = "id = " + req.params.id;
     console.log("condition", condition);
     
