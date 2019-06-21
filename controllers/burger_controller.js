@@ -14,11 +14,11 @@ router.get("/", function(req,res) {
 // get selectAll
 router.get("/burgers", function(req,res) {
     burgers.selectAll(function(data) {
-        var allObjects = {
+        var hbsObject = {
             burgers: data
         };
-        console.log(allObjects);
-        res.render("index", allObjects);
+        console.log(hbsObject);
+        res.render("index", hbsObject);
     });
 });
 
