@@ -1,5 +1,5 @@
 html {
-    background-color: lightgrey;
+    background-color: lightslategray
 }
 
 body {
@@ -61,7 +61,7 @@ h2 {
 }
 
 .formContainer {
-    background-color: lightgrey;
+    background-color: lightslategray;
 }
 
 .addBurgerButton {
@@ -74,15 +74,15 @@ h2 {
     width: 100%;
     margin: 0;
     padding: 10px;
-    background-color: #lightgrey;
+    background-color: #lightslategray;
     border: none;
 }
 
 .addBurgerButton:active {
-   background-color: #lightgrey;
+   background-color: #lightslategray;
 }
 
 .burgerFooter {
-   background-color: #lightgrey;
+   background-color: #lightslategray;
    padding: 20px 0;
 }
