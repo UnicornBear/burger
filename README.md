@@ -32,6 +32,6 @@ Finally, run the node server locally.
 
 	node server.js
 	
-You can now open the application on port 3000 at the URL: `http://localhost:3000/`.
+You can now open the application on port 3000 at the URL: `http://localhost:3000/`
 
-**Enjoy Your Digital Burgerburger!**
+**Enjoy Your Digital Burger!**
