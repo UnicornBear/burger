@@ -1,3 +1,5 @@
+![Test Image 1](https://github.com/UnicornBear/newPortfolio/blob/master/burgerApp.jpg)
+
 # burger
 An Application for some good old fashion Digital Burger Destruction
 
@@ -15,7 +17,7 @@ The user can then eat any burger by clicking on it, which moves it into the adja
 
 ## Demo
 
-The demo of the burger eating application can be found hosted on Heruka @
+The demo of the burger eating application can be found hosted on Heruka @ https://calm-island-70689.herokuapp.com
 
 ## Installation
 
@@ -35,3 +37,5 @@ Finally, run the node server locally.
 You can now open the application on port 3000 at the URL: `http://localhost:3000/`
 
 **Enjoy Your Digital Burger!**
+
+
